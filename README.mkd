@@ -1,0 +1,14 @@
+# django-mobler
+
+User-Agent-based mobile device detection for Django
+
+* **Author**: [Derek Payton](http://www.dmpayton.com)
+* **Version**: 0.1
+* **License**: MIT
+
+## Todo: a better readme...
+
+browscap.ini: http://browsers.garykeith.com/stream.asp?BrowsCapINI
+
+***Credits:***
+[django-browsecap](https://github.com/ella/django-browsecap) served as the original inspiration and code basis for django-mobler.
