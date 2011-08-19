@@ -58,7 +58,7 @@ How long the override cookie should live
 ***Default:** 60\*60\*24\*31 (31 days)*
 
 **MOBLER\_PRESERVE\_URL**  
-Whether or not to preserve the URL when redirecting to the mobile site (if False, users will be redirected to you mobile homepage)  
+Whether or not to preserve the URL when redirecting to the mobile site (if False, users will be redirected to your mobile homepage)  
 ***Default:** True*
 
 ## Special Thanks
