@@ -8,7 +8,7 @@ if BROWSCAP_PATH is None:
 
 MOBILE_DOMAIN = getattr(settings, 'MOBILE_DOMAIN', 'http://m.example.com')
 MOBLER_CACHE_KEY = getattr(settings, 'MOBLER_CACHE_KEY', 'mobler-cache')
-MOBLER_CACHE_TIMEOUT = getattr(settings, 'MOBLER_CACHE_TIMEOUT', 60*60*24*7)
+MOBLER_CACHE_TIMEOUT = getattr(settings, 'MOBLER_CACHE_TIMEOUT', 60*60*1)
 MOBLER_COOKIE_NAME = getattr(settings, 'MOBLER_COOKIE_NAME', 'mobler-override')
 MOBLER_COOKIE_AGE = getattr(settings, 'MOBLER_COOKIE_AGE', 60*60*24*31)
 MOBLER_PRESERVE_URL = getattr(settings, 'MOBLER_PRESERVE_URL', True)
