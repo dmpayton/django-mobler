@@ -3,7 +3,7 @@
 django-mobler is a User-Agent-based mobile device detection app for Django.
 
 * **Author**: [Derek Payton](http://www.dmpayton.com)
-* **Version**: 0.1
+* **Version**: 1.0.0
 * **License**: MIT
 
 This app depends on a browscap.ini file from the [Browser Capabilities Project](http://browsers.garykeith.com/), and must be periodically updated with the latest definitions. The current version may be found [here](http://browsers.garykeith.com/stream.asp?BrowsCapINI), and can be set with the `BROWSCAP_PATH` setting, described below.
