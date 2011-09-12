@@ -2,11 +2,9 @@
 
 django-mobler is a User-Agent-based mobile device detection app for Django.
 
-* **Author**: [Derek Payton](http://www.dmpayton.com)
-* **Version**: 1.0.0
+* **Author**: [Derek Payton](http://dmpayton.com)
+* **Version**: 1.1.0
 * **License**: MIT
-
-This app depends on a browscap.ini file from the [Browser Capabilities Project](http://browsers.garykeith.com/), and must be periodically updated with the latest definitions. The current version may be found [here](http://browsers.garykeith.com/stream.asp?BrowsCapINI), and can be set with the `BROWSCAP_PATH` setting, described below.
 
 ## Usage
 
@@ -27,27 +25,19 @@ If your mobile site is built in Django, mobler includes a helper template tag to
 **Usage:**
 
     {% load mobler_tags %}
-    <a href="http://www.exmaple.com{% full_site_override request %}">Full Site</a>
+    <a href="http://www.example.com{% full_site_override request %}">Full Site</a>
 
 If you are on `http://m.example.com/foo/bar/?fizz=buzz`, the tag will return `/foo/bar/?fizz=buzz&mobler-override=1`.
 
 ## Settings
 
-**BROWSCAP\_PATH**  
-File path to a custom browsecap.ini  
-***Default:** /path/to/mobler/browsecap.ini*
-
 **MOBILE\_DOMAIN**  
 URL of your mobile site, e.g., http://m.example.com  
 ***Required***
 
-**MOBLER\_CACHE\_KEY**  
-Cache key used for parsed browscap.ini data  
-***Default:** mobler-cache*
-
-**MOBLER\_CACHE\_TIMEOUT**  
-Length of time to cache the parsed browscap.ini data  
-***Default:** 60\*60\*2 (2 hours)*
+**MOBLER\_UA\_STRINGS**  
+List of substrings to look for in the User-Agent.  
+***Default:** ('Android', 'BlackBerry', 'IEMobile', 'Maemo', 'Opera Mini', 'SymbianOS', 'WebOS', 'Windows Phone', 'iPhone')*
 
 **MOBLER\_COOKIE\_NAME**  
 Name of the override cookie and GET parameter  
@@ -61,6 +51,11 @@ How long the override cookie should live
 Whether or not to preserve the URL when redirecting to the mobile site (if False, users will be redirected to your mobile homepage)  
 ***Default:** True*
 
+## Testing
+
+    python manage.py test mobler
+
 ## Special Thanks
 
-django-mobler is based on [django-browsecap](https://github.com/ella/django-browsecap), and some of the code is based on it. Thank you for the inspiration!
+django-mobler was inspired by [django-browsecap](https://github.com/ella/django-browsecap).
+
