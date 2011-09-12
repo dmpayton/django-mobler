@@ -46,7 +46,6 @@ setup(
     maintainer = 'Derek Payton',
     maintainer_email = 'derek.payton@gmail.com',
     url='https://github.com/dmpayton/django-mobler',
-    download_url='https://github.com/dmpayton/django-mobler/tarball/v1.0.0',
     license='MIT License',
     packages=packages,
     package_data={'mobler': data_files},
