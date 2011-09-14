@@ -6,6 +6,30 @@ django-mobler is a User-Agent-based mobile device detection app for Django.
 * **Version**: 1.1.0
 * **License**: MIT
 
+## Installation
+
+django-mobler can be installed in any number of the usual ways:
+
+```
+easy_install django-mobler
+```
+
+```
+pip install django-mobler
+```
+
+```
+pip install -e git+git://github.com/dmpayton/django-mobler.git#egg=django-mobler
+```
+
+```
+git clone git://github.com/dmpayton/django-mobler.git
+cd django-mobler
+python setup.py install
+```
+
+etc...
+
 ## Usage
 
 Mobler requires only a couple changes to your settings.py in order to function:
